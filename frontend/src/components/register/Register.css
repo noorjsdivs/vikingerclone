@@ -1,0 +1,17 @@
+.register {
+    position: absolute;
+    width: 600px;
+    height: 100%;
+    right: 120px;
+    background: pink;
+    margin-right: 50px;
+
+}
+
+.register h2 {
+    font-family: var(--designFont);
+    text-align: center;
+    color: var(--textColor);
+    font-size: 30px;
+    padding: 40px 10px;
+}

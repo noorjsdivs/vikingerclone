@@ -5,7 +5,7 @@ const Prime = () => {
   return (
     <div className="primePage">
       <h1>This is the prime page</h1>
-      <Link to="/login">
+      <Link to="/landingPage">
         <p>Go to Login</p>
       </Link>
     </div>

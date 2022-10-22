@@ -6,6 +6,7 @@ const {
   validateUsername,
 } = require("../helpers/validation.js");
 const User = require("../models/User.js");
+const { sendEmailVerification } = require("../helpers/mailer.js");
 
 try {
   exports.register = async (req, res) => {
@@ -73,6 +74,10 @@ try {
       bDay,
       gender,
     }).save();
+
+    const url = `${process.env.BASE_URL}/activate/`;
+    sendEmailVerification(user.email, user.first_name, url);
+
     res.json(user);
   };
 } catch (error) {

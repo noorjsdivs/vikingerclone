@@ -1,4 +1,5 @@
-import logoImg from "./images/loginImg/loginImg.png";
-import logoTransparent from "./images/loginImg/logoNobg.png";
+import landingBg from "./loginPage/landingBg.jpg";
+import rocketImg from "./loginPage/rocket.png";
+import dotImg from "./loginPage/dot.png";
 
-export { logoImg, logoTransparent };
+export { landingBg, rocketImg, dotImg };

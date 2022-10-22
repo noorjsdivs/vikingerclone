@@ -1,0 +1,105 @@
+.landingPage {
+    width: full;
+    height: 100vh;
+    background-image: url("../../assets//loginPage/landingBg.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+
+/* ===================================================
+                Left part start here
+  ==================================================*/
+
+
+.landingPage .left {
+    width: 70%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.landingPage .left .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.landingPage .left .text h3 {
+    font-family: var(--titleFont);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+
+}
+
+.landingPage .left .text h1 {
+    font-family: var(--designFont);
+    font-weight: 900;
+    font-size: 100px;
+    text-transform: uppercase;
+    margin-top: -30px;
+}
+
+.landingPage .left .text p {
+    font-family: var(--designFont);
+    font-size: 20px;
+    width: 500px;
+    text-align: center;
+}
+
+
+.landingPage .left .buttons .loginBtn {
+    font-family: var(--designFont);
+    color: white;
+    background: transparent;
+    width: 210px;
+    height: 60px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    border: 1px solid white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.landingPage .left .buttons .registerBtn {
+    font-family: var(--designFont);
+    color: black;
+    background: white;
+    width: 210px;
+    height: 60px;
+    font-size: 18px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    border: 1px solid white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* ===================================================
+                Left part end here
+  ==================================================*/
+/* ===================================================
+                Right part start here
+  ==================================================*/
+
+.landingPage .right {
+    width: 30%;
+    height: 100vh;
+    position: relative;
+    background-image: url("../../assets//loginPage/dot.png");
+    background-color: white;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+/* ===================================================
+                Right part end here
+  ==================================================*/
