@@ -1,0 +1,87 @@
+.login {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(245, 245, 245, 0.801);
+}
+
+/* "#f0f2f5" */
+
+.loginPage {
+    width: full;
+    display: flex;
+    align-items: center;
+}
+
+/*================ Login Page left part start here ====================*/
+
+.loginPage .logingLeft {
+    width: full;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 200px 80px;
+
+}
+
+.loginPage .logingLeft img {
+    width: 300px;
+    height: 110px;
+    margin: -32px;
+}
+
+.loginPage .logingLeft p {
+    font-family: var(--bodyFont);
+    font-size: 26px;
+    font-weight: normal;
+    line-height: 32px;
+    width: 500px;
+}
+
+/*================ Login Page left part end here ====================*/
+/*================ Login Page Right part start here ====================*/
+
+.loginPage .loginRight {
+    width: full;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.loginPage .loginRight .loginForm {
+    width: 380px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+.loginPage .loginRight .loginForm p {
+    font-family: var(--titleFont);
+    font-size: 16px;
+    text-align: center;
+    color: var(--btnBlue);
+    padding-bottom: 25px;
+    border-bottom: 1px solid #dadde1;
+}
+
+.loginPage .bottomText {
+    font-family: var(--titleFont);
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.loginPage .bottomText span {
+    font-weight: 700;
+}
+
+.loginPage .bottomText span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*================ Login Page Right part end here ====================*/

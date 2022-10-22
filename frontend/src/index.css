@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ============== FontFamily goes here =================== */
+:root {
+  --bodyFont: "Poppins", sans-serif;
+  --titleFont: "Roboto", sans-serif;
+  --btnBlue: #1877f2;
+  --btnGreen: #42b72a;
+}
+
+/* ============== Colors start here =================== */
+
+.primePage h1 {
+  font-family: var(--titleFont);
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.primePage p {
+  font-family: var(--bodyFont);
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: underline;
+  color: var(--btnBlue);
+}
