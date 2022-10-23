@@ -1,18 +1,19 @@
-.register {
+.login {
     position: absolute;
     width: 600px;
     height: 100%;
     right: 120px;
+    top: 0;
     background: white;
+    /* transform: translateX(150%); */
     margin-right: 50px;
     -webkit-box-shadow: 6px 0px 32px -12px rgba(0, 0, 0, 0.49);
     -moz-box-shadow: 6px 0px 32px -12px rgba(0, 0, 0, 0.49);
     box-shadow: 6px 0px 32px -12px rgba(0, 0, 0, 0.49);
-    z-index: 50;
 
 }
 
-.register h2 {
+.login h2 {
     font-family: var(--designFont);
     text-align: center;
     color: var(--textColor);
@@ -21,7 +22,7 @@
     margin-top: 10px;
 }
 
-.register form {
+.login form {
     position: relative;
     font-family: var(--designFont);
     background-color: white;
@@ -34,19 +35,19 @@
 
 }
 
-.register form .birthday {
+.login form .birthday {
     display: flex;
     gap: 20px;
 }
 
-.register form img {
+.login form img {
     position: absolute;
     width: 120px;
     top: -130px;
     left: -65px;
 }
 
-.register form .inputField {
+.login form .inputField {
     font-family: var(--designFont);
     width: 100%;
 }
@@ -59,8 +60,8 @@
 /* ========================================================
                 Register Button start here 
   ======================================================== */
-.register .formBtn {
-    background-color: #23d2e2;
+.login .formBtn {
+    background-color: #615dfa;
     box-shadow: 4px 7px 12px 0 rgb(35 210 226 / 20%);
     padding: 18px;
     font-family: var(--designFont);
@@ -68,8 +69,8 @@
     font-weight: 700;
 }
 
-.register .formBtn:hover {
-    background-color: #1bc5d4;
+.login .formBtn:hover {
+    background-color: #5753e4;
     transition: all ease-in-out .5s;
 
 }
