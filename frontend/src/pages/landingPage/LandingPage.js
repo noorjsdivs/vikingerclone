@@ -4,18 +4,41 @@ import Register from "../../components/register/Register";
 import "./LandingPage.css";
 
 const LandingPage = () => {
-  const [form, setForm] = useState("");
-  const [loginForm, setLoginForm] = useState("");
   const ref = useRef(null);
-  const ref2 = useRef(null);
+  const [registrationForm, setRegistrationForm] = useState("");
+  const [loginForm, setLoginForm] = useState("");
+  const [loginButton, setLoginButton] = useState("");
+  const [regButton, setRegButton] = useState("");
   useEffect(() => {
-    const regiForm = document.getElementById("regiForm");
-    const loginForm = document.getElementById("logForm");
-    setForm(regiForm);
-    setLoginForm(loginForm);
-    // loginForm.style.transform = "translateX(170%)";
-  }, []);
+    const regiForm = document.getElementById("registrationForm");
+    setRegistrationForm(regiForm);
+    const logiForm = document.getElementById("loginForm");
+    setLoginForm(logiForm);
+    const loginBtn = document.getElementById("logBtn");
+    setLoginButton(loginBtn);
+    const regiBtn = document.getElementById("regBtn");
+    setRegButton(regiBtn);
+  }, [registrationForm, loginForm, loginButton, regButton]);
 
+  const handleLoginForm = () => {
+    registrationForm.style.transform = "translateX(170%)";
+    loginForm.style.transform = "translateX(0)";
+    loginButton.style.backgroundColor = "white";
+    loginButton.style.color = "#444444";
+    regButton.style.backgroundColor = "transparent";
+    regButton.style.color = "white";
+    loginForm.style.transition = "all ease-in-out .7s";
+    registrationForm.style.transition = "all ease-in-out .7s";
+  };
+
+  const handleRegistrationForm = () => {
+    loginForm.style.transform = "translateX(170%)";
+    registrationForm.style.transform = "translateX(0)";
+    loginButton.style.backgroundColor = "transparent";
+    loginButton.style.color = "white";
+    regButton.style.backgroundColor = "white";
+    regButton.style.color = "#444444";
+  };
   return (
     <div className="landingPage">
       <div className="left">
@@ -28,28 +51,12 @@ const LandingPage = () => {
           </p>
         </div>
         <div className="buttons">
-          <button
-            onClick={(e) => {
-              e.preventDefault();
-              form.style.transform = "translateX(170%)";
-              loginForm.style.transform = "translateX(0)";
-              form.style.transition = "all ease-in-out .6s";
-            }}
-            className="loginBtn"
-          >
+          <button onClick={handleLoginForm} id="logBtn" className="loginBtn">
             Login
           </button>
           <button
-            onClick={(e) => {
-              e.preventDefault();
-              loginForm.style.transition = "all ease-in-out .6s";
-              loginForm.style.transform = "translateX(170%)";
-              form.style.transform = "translateX(0)";
-
-              // form.style.transform = "translateX(0)";
-              // loginForm.style.transform = "translateX(170%)";
-              // form.style.transition = "all ease-in-out .6s";
-            }}
+            onClick={handleRegistrationForm}
+            id="regBtn"
             className="registerBtn"
           >
             Register
@@ -57,10 +64,15 @@ const LandingPage = () => {
         </div>
       </div>
       <div className="right">
-        <div className="registrationForm" ref={ref} id="regiForm">
+        <div className="registrationForm" ref={ref} id="registrationForm">
           <Register />
         </div>
-        <div className="loginingForm" ref={ref2} id="logForm">
+        <div
+          style={{ transform: "translateX(150%)" }}
+          className="loginingForm"
+          ref={ref}
+          id="loginForm"
+        >
           <Login />
         </div>
       </div>

@@ -1,89 +1,86 @@
 .landingPage {
-    width: full;
-    height: 100vh;
-    background-image: url("../../assets//loginPage/landingBg.jpg");
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    overflow: hidden;
+  width: full;
+  height: 100vh;
+  background-image: url("../../assets//loginPage/landingBg.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  overflow-x: hidden;
 }
 
 /* ===================================================
                 Left part start here
   ==================================================*/
 
-
 .landingPage .left {
-    width: 70%;
-    height: 100vh;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
+  width: 70%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
 }
 
 .landingPage .left .text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .landingPage .left .text h3 {
-    font-family: var(--titleFont);
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 20px;
-
+  font-family: var(--titleFont);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .landingPage .left .text h1 {
-    font-family: var(--designFont);
-    font-weight: 900;
-    font-size: 100px;
-    text-transform: uppercase;
-    margin-top: -30px;
+  font-family: var(--designFont);
+  font-weight: 900;
+  font-size: 100px;
+  text-transform: uppercase;
+  margin-top: -30px;
 }
 
 .landingPage .left .text p {
-    font-family: var(--designFont);
-    font-size: 20px;
-    width: 500px;
-    text-align: center;
+  font-family: var(--designFont);
+  font-size: 20px;
+  width: 500px;
+  text-align: center;
 }
 
-
 .landingPage .left .buttons .loginBtn {
-    font-family: var(--designFont);
-    color: white;
-    background: transparent;
-    width: 210px;
-    height: 60px;
-    font-size: 18px;
-    cursor: pointer;
-    letter-spacing: 2px;
-    font-weight: 700;
-    border: 1px solid white;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+  font-family: var(--designFont);
+  color: white;
+  background: transparent;
+  width: 210px;
+  height: 60px;
+  font-size: 18px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-weight: 700;
+  border: 1px solid white;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .landingPage .left .buttons .registerBtn {
-    font-family: var(--designFont);
-    color: black;
-    cursor: pointer;
-    background: white;
-    width: 210px;
-    height: 60px;
-    font-size: 18px;
-    font-size: 18px;
-    letter-spacing: 2px;
-    font-weight: 700;
-    border: 1px solid white;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+  font-family: var(--designFont);
+  color: #444444;
+  cursor: pointer;
+  background: white;
+  width: 210px;
+  height: 60px;
+  font-size: 18px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  border: 1px solid white;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 /* ===================================================
@@ -94,30 +91,42 @@
   ==================================================*/
 
 .landingPage .right {
-    width: 30%;
-    height: 100vh;
-    position: relative;
-    background-image: url("../../assets//loginPage/dot.png");
-    background-color: white;
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
+  width: 30%;
+  height: 100%;
+  position: relative;
+  background-image: url("../../assets//loginPage/dot.png");
+  background-color: white;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
 }
 
 .landingPage .right .registrationForm {
-    width: 500px;
-    height: 100vh;
-    background-color: white;
-
+  position: absolute;
+  width: 600px;
+  height: 100%;
+  right: 120px;
+  margin-right: 50px;
+  background-color: white;
+  top: 0;
+  -webkit-box-shadow: 6px 0px 32px -12px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: 6px 0px 32px -12px rgba(0, 0, 0, 0.49);
+  box-shadow: 6px 0px 32px -12px rgba(0, 0, 0, 0.49);
+  padding: 10px 0px;
 }
 
 .landingPage .right .loginingForm {
-    width: 500px;
-    height: 100vh;
-    background-color: white;
+  width: 600px;
+  height: 100%;
+  background: white;
+  position: absolute;
+  width: 600px;
+  margin-right: 50px;
+  right: 120px;
+  top: 0;
+  -webkit-box-shadow: 6px 0px 32px -12px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: 6px 0px 32px -12px rgba(0, 0, 0, 0.49);
+  box-shadow: 6px 0px 32px -12px rgba(0, 0, 0, 0.49);
 }
-
-
-
 
 /* ===================================================
                 Right part end here
