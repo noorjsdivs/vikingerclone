@@ -1,5 +1,4 @@
 header {
-  width: full;
   margin: 0 auto;
   background-color: #615dfa;
   height: 80px;
@@ -8,6 +7,7 @@ header {
   justify-content: space-between;
   padding: 0px 20px;
 }
+
 /* ========================================================
                     Header left start here 
 ======================================================== */
@@ -17,6 +17,7 @@ header .left {
   gap: 5px;
   width: 20%;
 }
+
 header .left h4 {
   font-family: var(--titleFont);
   font-weight: 700;
@@ -24,6 +25,7 @@ header .left h4 {
   text-transform: uppercase;
   font-size: 14px;
 }
+
 /* ========================================================
                     Header left end here 
 ======================================================== */
@@ -35,27 +37,33 @@ header .middle {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
   width: 50%;
 }
+
 header .middle .list {
   font-family: var(--bodyFont);
   width: 50%;
 }
+
 header .middle .list ul {
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 40px;
 }
+
 header .middle .list ul li {
   display: flex;
   align-items: center;
   font-size: 14px;
   font-weight: 500;
 }
+
 header .middle .search {
   width: 50%;
   position: relative;
 }
+
 header .middle .search input {
   padding: 10px 15px;
   width: 90%;
@@ -66,15 +74,18 @@ header .middle .search input {
   color: white;
   font-size: 14px;
 }
+
 header .middle .search input::placeholder {
   color: #6965e0;
 }
+
 header .middle .search .icon {
   position: absolute;
   top: 9px;
   right: 25px;
   color: #6965e0;
 }
+
 /* ========================================================
                     Header Middle end here 
 ======================================================== */
@@ -87,6 +98,7 @@ header .right {
   justify-content: space-between;
   align-items: center;
 }
+
 header .right .left {
   display: flex;
   flex-direction: column;
@@ -94,29 +106,34 @@ header .right .left {
   width: 40%;
   border-right: 2px solid #7a77fd;
 }
+
 header .right .left .text {
   width: 70%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
 }
+
 header .right .left .text p {
   font-size: 12px;
   text-transform: uppercase;
   color: white;
 }
+
 header .right .left .line {
   background-color: #4e4ac8;
   width: 70%;
   height: 3px;
   position: relative;
 }
+
 header .right .left .line .line2 {
   position: absolute;
   width: 75%;
   height: 3px;
   background-color: #41efff;
 }
+
 header .right .middle {
   display: flex;
   flex-direction: column;
@@ -124,14 +141,50 @@ header .right .middle {
   width: 50%;
   border-right: 2px solid #7a77fd;
 }
+
 header .right .middle .icons {
   width: 70%;
   display: flex;
   justify-content: space-between;
+  color: #7A77FD;
+  position: relative;
 }
+
+header .right .middle .icons .dots {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #41EFFF;
+  right: 2px;
+  bottom: 5px;
+}
+
+header .right .middle .icons .items {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: gray;
+  left: 12px;
+  bottom: 1px;
+  color: #41EFFF;
+  font-size: 10px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+}
+
 header .right .right {
   width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #7A77FD;
 }
+
 /* ========================================================
                     Header right end here 
 ======================================================== */

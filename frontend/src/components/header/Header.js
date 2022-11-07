@@ -5,6 +5,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import ChatIcon from "@mui/icons-material/Chat";
 import NotificationsIcon from "@mui/icons-material/Notifications";
+import HandymanIcon from "@mui/icons-material/Handyman";
 import "./header.css";
 import { logo } from "../../assets";
 
@@ -14,7 +15,7 @@ const Header = () => {
       {/*================ Left part start here ====================*/}
       <div className="left">
         <img src={logo} alt="logo" />
-        <h4>MERNIAN</h4>
+        <h4>Noorjsdivs</h4>
       </div>
       {/*================ Left part end here ====================*/}
       {/*================ Middle part start here ====================*/}
@@ -56,9 +57,13 @@ const Header = () => {
             <ShoppingCartIcon />
             <ChatIcon />
             <NotificationsIcon />
+            <span className="dots"></span>
+            <span className="items">0</span>
           </div>
         </div>
-        <div className="right"></div>
+        <div className="right">
+          <HandymanIcon />
+        </div>
       </div>
       {/*================ Right part end here ====================*/}
     </header>
