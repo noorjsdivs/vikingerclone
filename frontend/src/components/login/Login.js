@@ -8,7 +8,6 @@ import { rocketImg } from "../../assets";
 const Login = () => {
   let [email, setEmail] = useState("");
   let [password, setPassword] = useState("");
-
   let [erremail, setErremail] = useState("");
   let [errpassword, setErrpassword] = useState("");
 

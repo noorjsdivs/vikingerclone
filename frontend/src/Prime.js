@@ -1,13 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Header from "./components/header/Header";
 
 const Prime = () => {
   return (
-    <div className="primePage">
-      <h1>This is the prime page</h1>
-      <Link to="/landingPage">
-        <p>Go to Login</p>
-      </Link>
+    <div className="prime">
+      <Header />
     </div>
   );
 };

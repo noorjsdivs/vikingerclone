@@ -1,0 +1,137 @@
+header {
+  width: full;
+  margin: 0 auto;
+  background-color: #615dfa;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+/* ========================================================
+                    Header left start here 
+======================================================== */
+header .left {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 20%;
+}
+header .left h4 {
+  font-family: var(--titleFont);
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+/* ========================================================
+                    Header left end here 
+======================================================== */
+/* ========================================================
+                    Header Middle start here 
+======================================================== */
+header .middle {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+header .middle .list {
+  font-family: var(--bodyFont);
+  width: 50%;
+}
+header .middle .list ul {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+header .middle .list ul li {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+header .middle .search {
+  width: 50%;
+  position: relative;
+}
+header .middle .search input {
+  padding: 10px 15px;
+  width: 90%;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: #4e4ac8;
+  color: white;
+  font-size: 14px;
+}
+header .middle .search input::placeholder {
+  color: #6965e0;
+}
+header .middle .search .icon {
+  position: absolute;
+  top: 9px;
+  right: 25px;
+  color: #6965e0;
+}
+/* ========================================================
+                    Header Middle end here 
+======================================================== */
+/* ========================================================
+                    Header right start here 
+======================================================== */
+header .right {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .right .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  border-right: 2px solid #7a77fd;
+}
+header .right .left .text {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+header .right .left .text p {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: white;
+}
+header .right .left .line {
+  background-color: #4e4ac8;
+  width: 70%;
+  height: 3px;
+  position: relative;
+}
+header .right .left .line .line2 {
+  position: absolute;
+  width: 75%;
+  height: 3px;
+  background-color: #41efff;
+}
+header .right .middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  border-right: 2px solid #7a77fd;
+}
+header .right .middle .icons {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+header .right .right {
+  width: 20%;
+}
+/* ========================================================
+                    Header right end here 
+======================================================== */
