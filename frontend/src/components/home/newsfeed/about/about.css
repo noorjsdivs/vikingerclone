@@ -1,0 +1,151 @@
+.about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.about .name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .name h4 {
+  font-family: var(--titleFont);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.about .name span {
+  color: #23d2e2;
+  font-family: var(--titleFont);
+  font-size: 16px;
+}
+/* ======================= About Title Start here ======================== */
+.about .title {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about .title .des p {
+  font-size: 12px;
+  color: #afb0c0;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.about .title .info ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.about .title .info ul li {
+  font-size: 12px;
+  color: #afb0c0;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.about .title .info ul li span {
+  font-weight: 400;
+  color: #afb0c0;
+}
+/* ======================= About Photos Start here ======================== */
+.about .photos {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about .photos .photosFrame {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.about .photos .photosFrame .left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.about .photos .photosFrame .left img {
+  width: 100%;
+  border-radius: 10px;
+  height: 100px;
+  object-fit: cover;
+}
+.about .photos .photosFrame .right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.about .photos .photosFrame .right img {
+  width: 100%;
+  border-radius: 10px;
+  height: 100px;
+  object-fit: cover;
+}
+.about .photos .photosFrame .right span {
+  width: 100%;
+  border-radius: 10px;
+  height: 100px;
+  object-fit: cover;
+  background-color: #41efff;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ======================= About Videos Start here ======================== */
+.about .videos {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about .videos .videoThumb {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.about .videos .videoThumb .images {
+  width: 100%;
+  height: 100px;
+  position: relative;
+}
+.about .videos .videoThumb .images img {
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  object-fit: cover;
+}
+.about .videos .videoThumb .images span {
+  position: absolute;
+  height: 50px;
+  width: 35px;
+  height: 35px;
+  top: 30%;
+  left: 42%;
+  border: 2px solid #23d2e2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}

@@ -6,6 +6,9 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 /* ========================================================
@@ -146,7 +149,7 @@ header .right .middle .icons {
   width: 70%;
   display: flex;
   justify-content: space-between;
-  color: #7A77FD;
+  color: #7a77fd;
   position: relative;
 }
 
@@ -155,7 +158,7 @@ header .right .middle .icons .dots {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background-color: #41EFFF;
+  background-color: #41efff;
   right: 2px;
   bottom: 5px;
 }
@@ -168,13 +171,12 @@ header .right .middle .icons .items {
   background-color: gray;
   left: 12px;
   bottom: 1px;
-  color: #41EFFF;
+  color: #41efff;
   font-size: 10px;
   text-align: center;
   align-items: center;
   display: flex;
   justify-content: center;
-
 }
 
 header .right .right {
@@ -182,7 +184,7 @@ header .right .right {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #7A77FD;
+  color: #7a77fd;
 }
 
 /* ========================================================

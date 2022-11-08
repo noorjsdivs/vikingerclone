@@ -1,100 +1,100 @@
 .leftnav {
-    background-color: white;
-    width: 100%;
-    height: 100%;
+  background-color: white;
+  width: 100%;
+  height: 100%;
 }
 
 .leftnav .profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .leftnav .profile .profileTop {
-    width: 100%;
-    height: 75px;
-    background-color: #45437F;
+  width: 100%;
+  height: 75px;
+  background-color: #45437f;
 }
 
 .leftnav .profile .profileImg {
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-    background-color: white;
-    margin-top: -70px;
-    border: 4px solid white;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: white;
+  margin-top: -70px;
+  border: 4px solid white;
 }
 
 .leftnav .profile .profileImg img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .leftnav .profile .profileName {
-    text-align: center;
+  text-align: center;
 }
 
 .leftnav .profile .profileName h4 {
-    font-family: var(--titleFont);
-    font-size: 16px;
+  font-family: var(--titleFont);
+  font-size: 16px;
 }
 
 .leftnav .profile .profileName p {
-    font-size: 12px;
-    font-weight: 400;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .leftnav .profile .stats {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 .leftnav .profile .stats p {
-    color: #000000;
-    font-size: 14px;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .leftnav .profile .stats p span {
-    color: #AFB0C0;
-    font-size: 12px;
+  color: #afb0c0;
+  font-size: 12px;
 }
 
 .leftnav .profile .feed {
-    width: 100%;
-    color: #AFB0C0;
-    font-size: 14px;
-    font-weight: 400;
+  width: 100%;
+  color: #afb0c0;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .leftnav .profile .feed ul {
-    padding: 20px 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .leftnav .profile .feed ul li {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 25px;
-    background-color: transparent;
-    padding: 5px 8px;
-    border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 25px;
+  background-color: transparent;
+  padding: 5px 8px;
+  border-radius: 5px;
 }
 
 .leftnav .profile .feed ul li:hover {
-    cursor: pointer;
-    color: white;
-    background-color: #23D2E2;
+  cursor: pointer;
+  color: white;
+  background-color: #23d2e2;
 }

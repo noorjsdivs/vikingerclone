@@ -1,0 +1,237 @@
+.post {
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+.post .postDes {
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* ================== Post Profile start here =================== */
+.post .profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.post .profile .profileInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.post .profile .profileInfo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #d9d9d9;
+}
+.post .profile .profileInfo p {
+  font-family: var(--titlefont);
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.post .profile .profileInfo p span {
+  font-weight: 400;
+  color: #afb0c0;
+}
+/* ================== Post des start here =================== */
+.post .des p {
+  font-size: 12px;
+  font-weight: 400;
+  color: black;
+  line-height: 1.8;
+}
+.post .reactions {
+  width: 100%;
+  border-top: 1px solid #d9d9d9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.post .reactions .icons {
+  padding: 15px 0px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.post .reactions .icons .images {
+  display: flex;
+  align-items: center;
+}
+.post .reactions .icons .images img {
+  width: 20px;
+  height: 20px;
+}
+.post .reactions .icons .images img:first-child {
+  z-index: 3;
+}
+
+.post .reactions .icons .images img:nth-child(2) {
+  margin-left: -5px;
+  z-index: 2;
+}
+.post .reactions .icons .images img:nth-child(3) {
+  margin-left: -5px;
+}
+.post .reactions .icons .stats p {
+  font-family: var(--titlefont);
+  font-size: 12px;
+  color: black;
+  font-weight: bold;
+}
+.post .reactions .info {
+  display: flex;
+  gap: 20px;
+}
+.post .reactions .info p {
+  font-family: var(--titlefont);
+  font-size: 12px;
+  color: black;
+  font-weight: bold;
+}
+/* ===================== likebtn span start here ====================== */
+.post .likebtn {
+  width: 100%;
+  border-top: 2px solid #d9d9d9;
+  margin-top: -20px;
+  position: relative;
+}
+.post .likebtn .likeBtnIcons {
+  position: absolute;
+  top: -55px;
+  left: 0;
+  z-index: 999;
+  background-color: white;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 0px 30px -4px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: 0px 0px 30px -4px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 0px 30px -4px rgba(0, 0, 0, 0.36);
+}
+.post .likebtn .icons {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.post .likebtn .icons .icon {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+.post .likebtn .icons .icon img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.post .likebtn .icons .icon span {
+  position: absolute;
+  top: -22px;
+  left: -5px;
+  background-color: #45437f;
+  color: white;
+  font-size: 12px;
+  width: 50px;
+  height: 20px;
+  text-align: center;
+  border-radius: 30px;
+  display: none;
+  align-items: center;
+}
+.post .likebtn .icons .icon:hover span {
+  display: inline-block;
+}
+.post .likebtn .stats {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d9d9d9;
+}
+.post .likebtn .stats p {
+  font-family: var(--titlefont);
+  font-size: 12px;
+  font-weight: bold;
+  color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.post .likebtn .stats p:first-child {
+  cursor: pointer;
+}
+.post .comments {
+  width: 100%;
+  border-bottom: 1px solid #d9d9d9;
+}
+.post .comments .comment {
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.post .comments .comment .title {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  align-items: center;
+}
+.post .comments .comment .title p {
+  font-size: 12px;
+  font-weight: bold;
+}
+.post .comments .comment .title p span {
+  font-weight: 400;
+}
+.post .comments .comment .title img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.post .comments .comment .info {
+  padding: 10px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.post .comments .comment .info .icon {
+  margin-top: 10px;
+}
+.post .comments .comment .info .react .images img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.post .comments .comment .info .react {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.post .comments .comment .info .react .images {
+  display: flex;
+  align-items: center;
+}
+.post .comments .comment .info .react .images img:first-child {
+  z-index: 10;
+}
+.post .comments .comment .info .react .images img:last-child {
+  margin-left: -5px;
+}
+.post .comments .comment .info .react h4 {
+  font-size: 12px;
+  font-weight: 600;
+}
+.post .comments .comment .info p {
+  font-size: 12px;
+  color: #afb0c0;
+  font-weight: 500;
+}

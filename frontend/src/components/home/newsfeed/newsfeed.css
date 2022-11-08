@@ -1,114 +1,140 @@
 .newsfeed {
-    background-color: white;
-    width: 100%;
-    margin-top: 20px;
-    padding-bottom: 10px;
+  width: 100%;
+  height: calc(100vh - 80px);
+  padding-bottom: 50px;
+  overflow: scroll;
+}
+.newsfeed::-webkit-scrollbar {
+  display: none;
+}
+/* ===========================================================
+                    Newsfeed Info Start here
+=========================================================== */
+.newsfeed .newsfeedInfo {
+  background-color: white;
+  width: 100%;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
 }
 
-.newsfeed .profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+.newsfeed .newsfeedInfo .profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-.newsfeed .profile .profileTop {
-    width: 100%;
-    height: 300px;
-    background-color: #45437F;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+.newsfeed .newsfeedInfo .profile .profileTop {
+  width: 100%;
+  height: 300px;
+  background-color: #45437f;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-.newsfeed .profile .profileImg {
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-    background-color: white;
-    margin-top: -70px;
-    border: 10px solid white;
+.newsfeed .newsfeedInfo .profile .profileImg {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: white;
+  margin-top: -70px;
+  border: 10px solid white;
 }
 
-.newsfeed .profile .profileImg img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
+.newsfeed .newsfeedInfo .profile .profileImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.newsfeed .banner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 50px;
+.newsfeed .newsfeedInfo .banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
 }
 
-.newsfeed .banner .stats {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    margin-top: 10px;
+.newsfeed .newsfeedInfo .banner .stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
 }
 
-.newsfeed .banner p {
-    color: #000000;
-    font-size: 14px;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.newsfeed .newsfeedInfo .banner p {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.newsfeed .banner p span {
-    color: #AFB0C0;
-    font-size: 12px;
+.newsfeed .newsfeedInfo .banner p span {
+  color: #afb0c0;
+  font-size: 12px;
 }
 
-.newsfeed .banner .profileName {
-    text-align: center;
+.newsfeed .newsfeedInfo .banner .profileName {
+  text-align: center;
 }
 
-.newsfeed .banner .profileName h4 {
-    font-family: var(--titleFont);
-    font-size: 16px;
+.newsfeed .newsfeedInfo .banner .profileName h4 {
+  font-family: var(--titleFont);
+  font-size: 16px;
 }
 
-.newsfeed .banner .profileName p {
-    font-size: 12px;
-    font-weight: 400;
+.newsfeed .newsfeedInfo .banner .profileName p {
+  font-size: 12px;
+  font-weight: 400;
 }
 
-.newsfeed .banner .icons {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.newsfeed .newsfeedInfo .banner .icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.newsfeed .banner .icons span {
-    width: 40px;
-    height: 40px;
-    background-color: pink;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
+.newsfeed .newsfeedInfo .banner .icons span {
+  width: 40px;
+  height: 40px;
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
 }
 
-.newsfeed .banner .icons span:first-child {
-    background-color: #1877F2;
+.newsfeed .newsfeedInfo .banner .icons span:first-child {
+  background-color: #1877f2;
 }
 
-.newsfeed .banner .icons span:nth-child(2) {
-    background-color: #E4405F;
+.newsfeed .newsfeedInfo .banner .icons span:nth-child(2) {
+  background-color: #e4405f;
 }
 
-.newsfeed .banner .icons span:nth-child(3) {
-    background-color: #1DA1F2;
+.newsfeed .newsfeedInfo .banner .icons span:nth-child(3) {
+  background-color: #1da1f2;
 }
 
-.newsfeed .banner .icons span:last-child {
-    background-color: #CD201F;
+.newsfeed .newsfeedInfo .banner .icons span:last-child {
+  background-color: #cd201f;
 }
+/* ===========================================================
+                    Newsfeed Info end here
+=========================================================== */
+/* ===========================================================
+                    Newsfeed Post Start here
+=========================================================== */
+.newsfeed .newsfeedPost {
+  width: 100%;
+  margin-top: 20px;
+}
+/* ===========================================================
+                    Newsfeed Post end here
+=========================================================== */
