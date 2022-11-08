@@ -4,6 +4,7 @@ import dotImg from "./loginPage/dot.png";
 import logo from "./prime/logo.png";
 import profileImg from "./prime/profile.png";
 import profileImgDarkBg from "./prime/profileDarkBg.png";
+import bannerImg from "./prime/bannerImg.jpg";
 
 // Reaction buttons
 import likebtn from "./prime/reactions/like.png";
@@ -19,6 +20,7 @@ export {
   landingBg,
   rocketImg,
   dotImg,
+  bannerImg,
   logo,
   profileImg,
   profileImgDarkBg,

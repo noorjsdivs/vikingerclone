@@ -4,9 +4,11 @@
   padding-bottom: 50px;
   overflow: scroll;
 }
+
 .newsfeed::-webkit-scrollbar {
   display: none;
 }
+
 /* ===========================================================
                     Newsfeed Info Start here
 =========================================================== */
@@ -23,6 +25,17 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  position: relative;
+}
+
+.newsfeed .newsfeedInfo .profile .buttons {
+  position: absolute;
+  z-index: 999;
+  bottom: 45px;
+  right: 30px;
+  display: flex;
+  gap: 20px;
+
 }
 
 .newsfeed .newsfeedInfo .profile .profileTop {
@@ -31,6 +44,12 @@
   background-color: #45437f;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+.newsfeed .newsfeedInfo .profile .profileTop img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .newsfeed .newsfeedInfo .profile .profileImg {
@@ -125,6 +144,7 @@
 .newsfeed .newsfeedInfo .banner .icons span:last-child {
   background-color: #cd201f;
 }
+
 /* ===========================================================
                     Newsfeed Info end here
 =========================================================== */
@@ -135,6 +155,7 @@
   width: 100%;
   margin-top: 20px;
 }
+
 /* ===========================================================
                     Newsfeed Post end here
 =========================================================== */

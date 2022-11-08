@@ -4,19 +4,27 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import { profileImg } from "../../../assets";
+import { profileImg, bannerImg } from "../../../assets";
 import "./newsfeed.css";
 import About from "./about/About";
 import Post from "./post/Post";
+import AddFriendBtn from "./buttons/AddFriendBtn";
+import SendMessages from "./buttons/SendMessages";
 
 const Newsfeed = () => {
   return (
     <div className="newsfeed">
       <div className="newsfeedInfo">
         <div className="profile">
-          <div className="profileTop"></div>
+          <div className="profileTop">
+            <img src={bannerImg} alt="bannerImg" />
+          </div>
           <div className="profileImg">
             <img src={profileImg} alt="profileImg" />
+          </div>
+          <div className="buttons">
+            <AddFriendBtn />
+            <SendMessages />
           </div>
         </div>
         <div className="banner">

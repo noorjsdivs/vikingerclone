@@ -28,6 +28,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left: -110px;
 }
 
 .landingPage .left .text h3 {
@@ -50,6 +51,10 @@
   font-size: 20px;
   width: 500px;
   text-align: center;
+}
+
+.landingPage .left .buttons {
+  margin-left: -110px;
 }
 
 .landingPage .left .buttons .loginBtn {

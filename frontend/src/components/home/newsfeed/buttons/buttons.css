@@ -1,0 +1,37 @@
+.addFriend {
+    background-color: #615DFA;
+    color: white;
+    font-family: var(--titleFont);
+    font-size: 14px;
+    font-weight: 500;
+    width: 180px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.addFriend:hover {
+    background-color: #5753e4;
+    transition: all ease-in-out .3s;
+    cursor: pointer;
+}
+
+.sendMessages {
+    background-color: #23D2E2;
+    color: white;
+    font-family: var(--titleFont);
+    font-size: 14px;
+    font-weight: 500;
+    width: 180px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.sendMessages:hover {
+    background-color: #1bc5d4;
+    transition: all ease-in-out .3s;
+    cursor: pointer;
+}
