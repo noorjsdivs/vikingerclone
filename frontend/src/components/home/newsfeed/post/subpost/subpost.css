@@ -5,8 +5,8 @@
 }
 
 .post {
-    width: 100%;
-    height: auto;
+    /* width: 100%;
+    height: auto; */
     background-color: white;
     border-radius: 5px;
 }
@@ -181,6 +181,7 @@
     gap: 15px;
     font-size: 12px;
     font-weight: bold;
+    z-index: 999;
 }
 
 .post .likebtn .likebtnTab .reactionTab {
@@ -251,15 +252,27 @@
 }
 
 .post .likebtn .likebtnTab .reactionTab .reactionIcons .icon:hover span {
-    /* display: block;
-    transition: all ease-in-out .6s; */
     transform: translateY(-30px);
     opacity: 1;
     transition: all ease-in-out .4s;
 }
 
 /* ================= Post Comment start here ================ */
-.post .comments {
+/*========= Show Comments animation start here ===========*/
+.post .likebtn .likebtnTab .showComments {
+    cursor: pointer;
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    z-index: 999;
+}
+
+/*========= Show Comments animation end here ===========*/
+
+
+.post .showCommentsBox .comments {
     border-bottom: 1px solid #d9d9d9;
     display: flex;
     flex-direction: column;
@@ -267,92 +280,92 @@
     padding: 20px 0px;
 }
 
-.post .comments .comment {
+.post .showCommentsBox .comments .comment {
     padding: 0px 50px;
     display: flex;
     flex-direction: column;
 }
 
-.post .comments .comment .title {
+.post .showCommentsBox .comments .comment .title {
     display: flex;
     justify-content: flex-start;
     gap: 15px;
     align-items: center;
 }
 
-.post .comments .comment .title p {
+.post .showCommentsBox .comments .comment .title p {
     font-size: 12px;
     font-weight: bold;
 }
 
-.post .comments .comment .title p span {
+.post .showCommentsBox .comments .comment .title p span {
     font-weight: 400;
     margin-left: 5px;
 }
 
-.post .comments .comment .title img {
+.post .showCommentsBox .comments .comment .title img {
     width: 38px;
     height: 38px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.post .comments .comment .info {
+.post .showCommentsBox .comments .comment .info {
     padding: 5px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.post .comments .comment .info .icon {
+.post .showCommentsBox .comments .comment .info .icon {
     margin-top: 10px;
 }
 
-.post .comments .comment .info .react .images img {
+.post .showCommentsBox .comments .comment .info .react .images img {
     width: 20px;
     height: 20px;
     object-fit: cover;
     border-radius: 50%;
 }
 
-.post .comments .comment .info .react {
+.post .showCommentsBox .comments .comment .info .react {
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
-.post .comments .comment .info .react .images {
+.post .showCommentsBox .comments .comment .info .react .images {
     display: flex;
     align-items: center;
 }
 
-.post .comments .comment .info .react .images img:first-child {
+.post .showCommentsBox .comments .comment .info .react .images img:first-child {
     z-index: 10;
 }
 
-.post .comments .comment .info .react .images img:last-child {
+.post .showCommentsBox .comments .comment .info .react .images img:last-child {
     margin-left: -5px;
 }
 
-.post .comments .comment .info .react h4 {
+.post .showCommentsBox .comments .comment .info .react h4 {
     font-size: 12px;
     font-weight: 600;
 }
 
-.post .comments .comment .info p {
+.post .showCommentsBox .comments .comment .info p {
     font-size: 12px;
     color: #afb0c0;
     font-weight: 500;
 }
 
 /* ============== More Comments ================= */
-.post .moreComments {
+.post .showCommentsBox .moreComments {
     border-bottom: 1px solid #D9D9D9;
     padding: 20px;
     text-align: center;
 }
 
-.post .moreComments p {
+.post .showCommentsBox .moreComments p {
     font-size: 14px;
     color: #3E3F5E;
 }
@@ -363,7 +376,7 @@
 }
 
 /* ============== Comments Reply ================= */
-.post .commentsReply {
+.post .showCommentsBox .commentsReply {
     padding: 20px 40px;
     text-align: center;
     display: flex;
@@ -380,7 +393,7 @@
     border: 1px solid #D9D9D9;
 }
 
-.post .commentsReply input {
+.post .showCommentsBox .commentsReply input {
     padding: 10px 20px;
     border: 1px solid #D9D9D9;
     border-radius: 8px;
@@ -389,7 +402,7 @@
     flex: 1;
 }
 
-.post .commentsReply input::placeholder {
+.post .showCommentsBox .commentsReply input::placeholder {
     font-size: 12px;
     color: #D9D9D9;
     font-weight: 500;

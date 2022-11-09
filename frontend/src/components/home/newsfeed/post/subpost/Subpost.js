@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import ChatBubbleIcon from "@mui/icons-material/ChatBubble";
 import ShareIcon from "@mui/icons-material/Share";
-import PlayArrowIcon from "@mui/icons-material/PlayArrow";
+// import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import {
   profileImg,
   profileImgDarkBg,
@@ -19,6 +19,8 @@ import {
 import "./subpost.css";
 
 const Subpost = () => {
+  let [showComments, setShowComments] = useState(false);
+
   return (
     <div className="subPost">
       {/* ============= First Post start here ========= */}
@@ -103,7 +105,10 @@ const Subpost = () => {
                 </div>
               </div>
             </div>
-            <div>
+            <div
+              onClick={() => setShowComments(!showComments)}
+              className="showComments"
+            >
               <p>
                 <ChatBubbleIcon />
                 <span>Comment</span>
@@ -118,92 +123,98 @@ const Subpost = () => {
           </div>
         </div>
 
-        <div className="comments">
-          <div className="comment">
-            <div className="title">
-              <img src={profileImgDarkBg} alt="profileImgDarkBg" />
-              <p>
-                Robert jr.
-                <span>
-                  It's a always pleasure to do this streams with you. If we have
-                  at least half half the fun than last time it will be an
-                  incredible success!
-                </span>
-              </p>
-            </div>
-            <div className="info">
-              <div className="react">
-                <div className="images">
-                  <img src={lovebtn} alt="lovebtn" />
-                  <img src={wowbtn} alt="wowbtn" />
+        {showComments && (
+          <>
+            <div className="showCommentsBox">
+              <div className="comments">
+                <div className="comment">
+                  <div className="title">
+                    <img src={profileImgDarkBg} alt="profileImgDarkBg" />
+                    <p>
+                      Robert jr.
+                      <span>
+                        It's a always pleasure to do this streams with you. If
+                        we have at least half half the fun than last time it
+                        will be an incredible success!
+                      </span>
+                    </p>
+                  </div>
+                  <div className="info">
+                    <div className="react">
+                      <div className="images">
+                        <img src={lovebtn} alt="lovebtn" />
+                        <img src={wowbtn} alt="wowbtn" />
+                      </div>
+                      <div className="text">
+                        <h4>10</h4>
+                      </div>
+                    </div>
+                    <div>
+                      <p>React!</p>
+                    </div>
+                    <div>
+                      <p>Reply</p>
+                    </div>
+                    <div>
+                      <p>15 minutes ago</p>
+                    </div>
+                    <div>
+                      <p className="icon">
+                        <MoreHorizIcon />
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div className="text">
-                  <h4>10</h4>
+                <div className="comment">
+                  <div className="title">
+                    <img src={profileImg} alt="profileImgDarkBg" />
+                    <p>
+                      Ahmed Reza
+                      <span>It's great oppurtunity</span>
+                    </p>
+                  </div>
+                  <div className="info">
+                    <div className="react">
+                      <div className="images">
+                        <img src={likebtn} alt="likebtn" />
+                        <img src={wowbtn} alt="wowbtn" />
+                      </div>
+                      <div className="text">
+                        <h4>6</h4>
+                      </div>
+                    </div>
+                    <div>
+                      <p>React!</p>
+                    </div>
+                    <div>
+                      <p>Reply</p>
+                    </div>
+                    <div>
+                      <p>25 minutes ago</p>
+                    </div>
+                    <div>
+                      <p className="icon">
+                        <MoreHorizIcon />
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div>
-                <p>React!</p>
-              </div>
-              <div>
-                <p>Reply</p>
-              </div>
-              <div>
-                <p>15 minutes ago</p>
-              </div>
-              <div>
-                <p className="icon">
-                  <MoreHorizIcon />
+              <div className="moreComments">
+                <p>
+                  Load more comments <span>9+</span>
                 </p>
               </div>
-            </div>
-          </div>
-          <div className="comment">
-            <div className="title">
-              <img src={profileImg} alt="profileImgDarkBg" />
-              <p>
-                Ahmed Reza
-                <span>It's great oppurtunity</span>
-              </p>
-            </div>
-            <div className="info">
-              <div className="react">
-                <div className="images">
-                  <img src={likebtn} alt="likebtn" />
-                  <img src={wowbtn} alt="wowbtn" />
-                </div>
-                <div className="text">
-                  <h4>6</h4>
-                </div>
-              </div>
-              <div>
-                <p>React!</p>
-              </div>
-              <div>
-                <p>Reply</p>
-              </div>
-              <div>
-                <p>25 minutes ago</p>
-              </div>
-              <div>
-                <p className="icon">
-                  <MoreHorizIcon />
-                </p>
+              <div className="commentsReply">
+                <img src={profileImg} alt="profileImg" />
+                <input type="text" placeholder="Your reply" />
               </div>
             </div>
-          </div>
-        </div>
-        <div className="moreComments">
-          <p>
-            Load more comments <span>9+</span>
-          </p>
-        </div>
-        <div className="commentsReply">
-          <img src={profileImg} alt="profileImg" />
-          <input type="text" placeholder="Your reply" />
-        </div>
+          </>
+        )}
       </div>
       {/* ============= Second Post start here ========= */}
-      <div className="post">
+      {/* <div className="post">
         <div className="postDes">
           <div className="profile">
             <div className="profileInfo">
@@ -353,9 +364,9 @@ const Subpost = () => {
           <img src={profileImg} alt="profileImg" />
           <input type="text" placeholder="Your reply" />
         </div>
-      </div>
+      </div> */}
       {/* ============= Third Post start here ========= */}
-      <div className="post">
+      {/* <div className="post">
         <div className="postDes">
           <div className="profile">
             <div className="profileInfo">
@@ -498,7 +509,7 @@ const Subpost = () => {
           <img src={profileImg} alt="profileImg" />
           <input type="text" placeholder="Your reply" />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

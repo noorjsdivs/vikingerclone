@@ -6,6 +6,13 @@ const Post = () => {
   return (
     <div className="posts">
       <Subpost />
+      <Subpost />
+      <Subpost />
+      <Subpost />
+      <Subpost />
+      <Subpost />
+      <Subpost />
+      <Subpost />
     </div>
   );
 };
